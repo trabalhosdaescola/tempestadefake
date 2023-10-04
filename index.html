@@ -111,6 +111,11 @@
         left: 30px;
       }
     </style>
+     <script>
+      document.getElementById("toggle").addEventListener("click", function(){
+  document.getElementsByTagName('body')[0].classList.toggle("dark-theme");
+});
+      </script>
   </head>
   <body>
     <header>
@@ -186,16 +191,16 @@
           (Este site foi criado de uma forma básica para um trabalho de escola)
         </p>
       </article>
-      
+      <script>
+        document.getElementById("toggle").addEventListener("click", function(){
+    document.getElementsByTagName('body')[0].classList.toggle("dark-theme");
+  });
+        </script>
     </main>
     <footer>
       <p>&copy; 2023 E.M.E.F. Ana Araujo. Todos os direitos reservados.</p>
     </footer>
-    <script>
-      document.getElementById("toggle").addEventListener("click", function(){
-  document.getElementsByTagName('body')[0].classList.toggle("dark-theme");
-});
-      </script>
+   
   </body>
 </html>
 
