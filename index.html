@@ -190,7 +190,11 @@
           (Este site foi criado de uma forma básica para um trabalho de escola)
         </p>
       </article>
-      <script src="/Estudo/Estudo-Samuel/escola/main.js"></script>
+      <script>
+      document.getElementById("toggle").addEventListener("click", function(){
+        document.getElementsByTagName('body')[0].classList.toggle("dark-theme");
+      });
+      </script>
     </main>
 
     <footer>
