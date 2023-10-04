@@ -5,27 +5,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-    /* Estilo do cabeçalho */
+      /* Estilo do cabeçalho */
       header {
         background-color: #317a429b;
         padding: 20px;
         text-align: center;
       }
-      
+
       /* Estilo do conteúdo da notícia */
       p {
         font-size: 16px;
         line-height: 1.5;
         margin-bottom: 20px;
+        text-align: justify;
       }
-      
+
+      .invisible {
+        font-size: 1px;
+      }
+
       /* Estilo do rodapé */
       footer {
         background-color: #317a429b;
         padding: 20px;
         text-align: center;
       }
-      
+
       *,
       *:before,
       *:after {
@@ -33,24 +38,24 @@
         margin: 0;
         box-sizing: border-box;
       }
-      
+
       body {
         padding: 30px;
       }
-      
+
       .one {
         font-size: 20px;
       }
-      
+
       .button {
         font-size: 12px;
       }
-      
+
       img {
         max-width: 49%;
         display: inline-block;
       }
-      
+
       .container {
         width: 100%;
         height: 40px;
@@ -59,11 +64,11 @@
         float: left;
         width: 50%;
       }
-      
+
       video {
         margin: 1%;
       }
-      
+
       #toggle {
         -webkit-appearance: none;
         appearance: none;
@@ -86,15 +91,11 @@
         left: 7px;
         border-radius: 50%;
       }
-      
-      p {
-        text-align: justify;
-      }
-      
+
       .subtitle {
         text-align: justify;
       }
-      
+
       .dark-theme {
         background-color: #15181f;
         color: #e5e5e5;
@@ -108,7 +109,7 @@
         top: -4px;
         left: 30px;
       }
-      </style>
+    </style>
   </head>
   <body>
     <header>
@@ -123,8 +124,18 @@
         Para alterar de claro para escuro ou vice-versa, apenas click no botão.
       </p>
       <article>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/cUXNyweM7a0?si=bVAxUd_zTpA2O0bi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         
+        <p class="invisible">Video</p>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/cUXNyweM7a0?si=bVAxUd_zTpA2O0bi"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
         <p class="one">
           O Espírito Santo enfrenta a maior chuva desde que começaram as
           medições meteorológicas no Estado, há 90 anos.
@@ -182,3 +193,4 @@
     </footer>
   </body>
 </html>
+
